@@ -105,6 +105,7 @@ test('isVowel()', (t) => {
   t.is(isVowel(0), false)
   t.is(isVowel('B'), false)
   t.is(isVowel('b'), false)
+  t.is(isVowel('t'), false)
   t.is(isVowel('a'), true)
   t.is(isVowel('E'), true)
 })
@@ -124,7 +125,7 @@ test('reverse()', (t) => {
 
 test('findLongestWord()', (t) => {
   t.is(findLongestWord('book dogs'), 'book')
-  t.is(findLongestWord('everything'), 'life the universe and everything')
+  t.is(findLongestWord('life the universe and everything'), 'everything')
 })
 
 /* eslint-enable */
